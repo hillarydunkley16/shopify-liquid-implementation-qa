@@ -1,0 +1,35 @@
+Feature requests that are specific enough to require real Liquid syntax, varied enough to cover different parts of your corpus:
+
+**Basic object access**
+1. "Display the current product's title, price, and vendor on a product page"
+2. "Show the number of items in the cart and the cart's total price"
+3. "Display the current customer's name and email if they are logged in"
+
+**Filters**
+4. "Display a product price formatted with currency symbol and two decimal places"
+5. "Truncate a product description to 100 words with an ellipsis"
+6. "Convert a product handle to a readable title with proper capitalization"
+
+**Control flow**
+7. "Loop through all products in a collection and display only those that are in stock"
+8. "Display a sale badge on a product if its price is lower than its compare-at price"
+9. "Show a different message depending on whether the customer is logged in or not"
+
+**Pagination and collections**
+10. "Paginate a collection of products showing 12 per page with navigation links"
+11. "Build a sort dropdown for a collection page that lets users sort by price or best-selling"
+
+**Harder / multi-concept**
+12. "Display all images in a product's media gallery as clickable thumbnails"
+13. "Show a product's metafield value for a custom field called 'material' under the 'details' namespace"
+14. "Build a size guide that only displays if a product is tagged with 'has-size-guide'"
+
+**Trap question — should flag as unconfirmed**
+15. "Build a custom checkout page that collects additional customer information"
+
+Q15 is the trap — checkout customization isn't in your Liquid reference corpus and is heavily restricted by Shopify anyway. The agent should either flag it as unconfirmed or say it couldn't find relevant docs, not confidently generate checkout code from training data.
+
+
+
+
+% python -m agent.graph

@@ -1,0 +1,21 @@
+test_queries = [
+    # Tags
+    "How do I create a variable in Liquid?",
+    "How do I break out of a for loop early in Liquid?",
+    "What's the difference between assign and capture in Liquid?",
+    "How do I write a comment in Liquid that won't appear in the output?",
+    "How do I paginate results in Liquid?",
+    # Filters
+    "How do I convert a string to uppercase in Liquid?",
+    "How do I round a number to 2 decimal places in Liquid?",
+    "How do I display a product price with currency in Liquid?",
+    "How do I remove duplicate items from an array in Liquid?",
+    "How do I sort a collection of products by price?",
+    # Objects
+    "How do I access a product's title and price in Liquid?",
+    "How do I get the current customer's email address in Liquid?",
+    "How do I access metafields on a product object?",
+    "How do I get the URL of a product's featured image?",
+    # Trap question
+    "What's the difference between a section and a snippet in Shopify themes?",
+]
