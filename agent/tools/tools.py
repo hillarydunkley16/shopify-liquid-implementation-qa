@@ -1,11 +1,13 @@
+
+import streamlit as st
 from llama_index.core import StorageContext, load_index_from_storage, Settings
 from llama_index.embeddings.openai import OpenAIEmbedding
-from dotenv import load_dotenv
+
 from langchain_core.tools import tool
 import os 
 from pathlib import Path
-load_dotenv()
 
+os.environ["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]
 Settings.embed_model = OpenAIEmbedding(model="text-embedding-3-small")
 
 # storage_context = StorageContext.from_defaults(persist_dir="../../storage")
